@@ -15,9 +15,8 @@
     <style>
         /* Modal Container */
         .modal {
-            display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
+            z-index: 100; /* Sit on top */
             left: 0;
             top: 0;
             width: 100%;
@@ -935,12 +934,7 @@
 
         // Get the close button
         const closeButton = document.querySelector('.modal .close');
-
-        // Show the modal on page load
-        window.onload = function () {
-            modal.style.display = 'block';
-        };
-
+        
         // Close the modal when the user clicks on the close button
         closeButton.onclick = function () {
             modal.style.display = 'none';
